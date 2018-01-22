@@ -1,0 +1,39 @@
+#playerCreate {    
+    display: flex;
+    flex-direction: column;
+    
+    #playerName {
+        margin: 5px auto;
+        width: 80%;
+        font-size: 1.5rem;
+        height: 3rem;
+        font-family: 'VT323', monospace;
+        background-color: $base-light;
+        color: white;
+    }
+
+    #addPlayer {
+        width: 30%;
+        height: 3rem;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 350px) {
+    #playerCreate {
+        flex-direction: row;
+        justify-content: space-around;
+        
+        #addPlayer {
+            height: 1.75rem;
+            width: 15%;
+            margin: 5px 5px 5px 0;
+        }
+        
+        #playerName {
+            margin: 5px 15px;
+            height: 1.75rem;
+            padding-left: 5px;
+        }
+    }       
+}

@@ -1,0 +1,83 @@
+.player {
+    display: flex;
+    flex-direction: column;
+    border: solid $base-xtra-light 1px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.nameLabel {
+    font-size: 1.5rem;
+    height: 1.5rem;
+    margin: auto;
+    text-align: center;
+//    align-self: center;
+}
+
+.nameInput {
+    font-family: 'VT323', monospace;
+    font-size: 1.2rem;
+    height: 2rem;
+    background-color: $base-light;
+    color: white;
+    width: 100%;
+    margin: 10px;
+}
+
+.decrement {
+    background-color: #d60000;
+    height: 50px;
+    width: 50px;
+    font-size: 1.5rem;
+    transition: 0.5s ease;
+    
+    &:hover {
+        background-color: #ff3e3e;
+    }
+}
+
+.increment {
+    background-color: #009600;
+    height: 50px;
+    width: 50px;
+    font-size: 1.5rem;
+    transition: 0.5s ease;
+    
+    &:hover {
+        background-color: #31ff31;
+    }
+}
+
+.score {
+    width: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: auto 0;
+}
+
+.formatDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.remove {
+    height: 50px;
+    margin-right: 5px;
+}
+
+@media screen and (min-width: 575px) {
+    .player {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .nameLabel {
+        margin: 0 0 0 15px; 
+    }
+    
+    .nameInput {
+        width: 60%;
+        margin-left: 15px;
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,30 @@
+#scoreboard {
+    width: 90%;
+    border: solid black 2px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: $base;
+    
+    h1 {
+        text-align: center;
+        margin: 0 auto;        
+    }
+    
+    .counter {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    #scoreboard { 
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #scoreboard {
+        width: 50%;
+        margin-top: 150px;
+    }
+}

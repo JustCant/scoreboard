@@ -1,0 +1,22 @@
+body {
+    font-family: 'VT323', monospace;
+    color: white;
+    
+    button {
+        background-color: $base-light;
+        font-family: 'VT323', monospace;
+        color: white;
+        border: none;
+        border-radius: 2px;
+        transition: 0.5s ease;
+        
+        &:hover {
+            background-color: $base-xtra-light;
+        }
+    }
+    
+    input {
+        border: none;
+        border-radius: 5px;
+    }
+}
